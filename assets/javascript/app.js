@@ -12,7 +12,9 @@ var giphyTheme = [ "Pie",
 				   "S'mores",
 				   "Carrot Cake",
 				   "Chocolate",
-				   "Fudge"]
+				   "Fudge",
+				   "Cinnamon Rolls",
+				   "Chocolate Chip"]
 
 
 function createButtons(){
@@ -51,13 +53,9 @@ function clickButton() {
 
 				gifHolder.empty();
 				$.each(results, function(key) {
-
-					//gifHolder.append('<iframe src="'+gif.embed_url+'"/>');
-					//console.log("gif:", gif);
-				
-
-					var $dessertDiv = $('<div>');
-					var $rating = $('<p>').text(results[key].rating);
+					var $dessertDiv = $('<div>');					
+					var $rating = $('<p>').text("Rating" + results[key].rating);
+					console.log("rating:", results[key].rating);
 					var $dessertImage = $('<img>').attr('src', results[key].images.fixed_height_still.url)
 												  .attr('data-still', results[key].images.fixed_height_still.url)
 												  .attr('data-animate', results[key].images.fixed_height.url)
