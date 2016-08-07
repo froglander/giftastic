@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GifTastic!</title>
+    <title>Giphy-Tastic!</title>
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">    
-    
+    <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     
 </head>
 <body>
 <div class="container">
-    <div class="giphyButtons"></div>
-    <div class="giphyImages"></div>
+	<h1 class="text-center">Giphy-Tastic!</h1>
+	<div class="row">
+		<div class="col-sm-12 giphyButtonsRow">
+    		<div class="giphyButtons text-center"></div>
+    	</div>
+    </div>
+    <div class="row">
+		<div class="col-sm-12 text-center addButton">	
+			<form class="form-inline">
+				<div class="form-group">
+					<input type="text" id="addButtonText" class="form-control">
+					<input type="submit" value="Add Item" id="addButton" class="btn btn-default">
+				</div>
+			</form>
+		</div>
+	</div>
+    <div class="row">    
+    	<div class="col-sm-12">
+    		<div class="giphyImages"></div>
+    	</div>
+    </div>
 </div>
 
  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
