@@ -1,35 +1,53 @@
+html {
+    overflow-y:scroll;
+}
 body {	
     width: 100%;
     height: 100%;
-    background: url(../images/chocolate.jpg) no-repeat center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-
+    background: url(../images/dessert-background.jpg);
 }
-h1 {
+h1.giphy-tastic {
 	font-family: 'Lakki Reddy', cursive;
-	font-size: 60px;
-	color: #ffd05a;
-	text-shadow: 3px 3px #316f37;
+	font-size: 100px;
+	color: #573f3b;
+	text-shadow: 3px 3px #c78586;	
+	padding: 30px 10px 10px 20px;	
+}
+.giphyHeaderRow {
+	background-color: rgba(248,238,237,0.8);
+	margin-bottom: 0px;
+	margin-top: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border: 1px solid #c78586;
 }
 .dessertImage {
-	float: left;
+	display: inline-block;
 	padding: 10px;
 }
+.giphyImagesRow {
+	background-color: rgba(248,238,237,0.8);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
 .giphyButtonsRow {
-	background-color: #ed6e87;
-	padding: 20px 10px;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+	background-color: #c78586;
+	padding: 20px 10px;	
 }
 .giphyButton {
-	width: 150px;
+	width: 160px;
 }
 .addButton {
-	background-color: #9bc43e;
+	background-color: #724f4d;
 	padding: 15px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.tiny {
+	font-size: 10px;
+	text-align: center;
+}
+.rating {
+	font-family: 'Lakki Reddy', cursive;
+	font-size: 20px;
 }
