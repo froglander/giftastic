@@ -54,7 +54,7 @@ function clickGiphyButton() {
 	
 	// Ajax call to giphy api
 	$.ajax({
-		url: "http://api.giphy.com/v1/gifs/search",
+		url: "https://api.giphy.com/v1/gifs/search",
 		data: {
 			limit: 10,
 			api_key: "dc6zaTOxFJmzC",
