@@ -56,7 +56,7 @@ function clickGiphyButton() {
 	$.ajax({
 		url: "https://api.giphy.com/v1/gifs/search",
 		data: {
-			limit: 10,
+			limit: 12,
 			api_key: "dc6zaTOxFJmzC",
 			q: search
 		},
@@ -77,7 +77,7 @@ function clickGiphyButton() {
 												  .attr('data-still', results[key].images.fixed_height_still.url)
 												  .attr('data-animate', results[key].images.fixed_height.url)
 												  .attr('data-state', 'still')
-												  .addClass('img-responsive')
+												  .addClass('cover')
 												  .on('click', function(){
 												      var state =  $(this).data('state');
 													  if (state == 'still') {

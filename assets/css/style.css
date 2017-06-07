@@ -24,6 +24,14 @@ h1.giphy-tastic {
 .dessertImage {
 	display: inline-block;
 	padding: 10px;
+	
+}
+img {
+	height: 200px;
+	width: 265px;	
+}
+.cover {
+	object-fit: cover;
 }
 .giphyImagesRow {
 	background-color: rgba(248,238,237,0.8);
@@ -46,6 +54,7 @@ h1.giphy-tastic {
 .tiny {
 	font-size: 10px;
 	text-align: center;
+	margin: 20px;
 }
 .rating {
 	font-family: 'Lakki Reddy', cursive;
